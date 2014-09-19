@@ -1,0 +1,11 @@
+{% extends 'SataSampleBundle::layout.html.twig' %}
+{% block body %}
+    <h1>Welcome!</h1>
+    <p>
+		{% if welcome %}
+			{{ welcome }}
+		{% else %}
+			We don't like you!
+		{% endif %}
+    </p>
+{% endblock %}

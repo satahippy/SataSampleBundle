@@ -1,0 +1,5 @@
+imports:
+    - { resource: config.yml }
+
+parameters:
+    sata_sample.welcome: "Welcome to the club!"

@@ -1,0 +1,7 @@
+composer.lock
+phpunit.xml
+vendor
+
+# fixture app cache and logs
+Tests/Fixtures/App/cache
+Tests/Fixtures/App/logs

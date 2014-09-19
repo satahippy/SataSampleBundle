@@ -1,0 +1,11 @@
+framework:
+    secret: NotSoSecret
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+    templating:
+        engines: ['twig']
+    test: ~
+
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"

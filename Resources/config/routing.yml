@@ -1,0 +1,3 @@
+sata_contact_page:
+    path:     /welcome
+    defaults: { _controller: SataSampleBundle:Default:index }
