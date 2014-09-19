@@ -12,12 +12,12 @@ class WebTestCase extends BaseWebTestCase
             static::$class = static::getKernelClass();
         }
         
-        if (static::$class != 'SataSampleBundleAppKernel' && isset($options['environment'])) {
+        if (static::$class != 'SataSampleBundleAppKernel' || !isset($options['environment'])) {
             $options['environment'] = 'test';
         }
 
         return new static::$class(
-            isset($options['environment']) ? $options['environment'] : 'test',
+            $options['environment'],
             isset($options['debug']) ? $options['debug'] : true
         );
     }
